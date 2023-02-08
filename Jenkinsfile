@@ -8,5 +8,11 @@ pipeline {
                 sh 'python main.py'
             }
         }
+        stage('World') {
+            steps {
+                sh 'ls -l'
+                sh 'python main.py'
+            }
+        }
     }
 }
