@@ -1,18 +1,15 @@
-properties([pipelineTriggers([pollSCM('* * * * *')])])
 pipeline {
     agent any
 
     stages {
         stage('Hello') {
             steps {
-                sh 'ls -l'
-                sh 'python main.py'
+                echo 'Hello World'
             }
         }
-        stage('World') {
+        stage('Hello 2') {
             steps {
-                sh 'ls -l'
-                sh 'python main.py'
+                echo 'Hello World 2'
             }
         }
     }
